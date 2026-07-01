@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresas Clientes | ClimaLab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="clientes.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container nav-box">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.jpeg" alt="ClimaLab" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre-nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="empresas-clientes.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="herramientas.html">Herramientas</a>
+                </li>
+                <li class="nav-item ms-lg-3">
+                    <a href="contacto.html" class="btn btn-climalab">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== REDES SOCIALES ===== -->
+<div class="redes-sociales d-none d-lg-flex">
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="clientes-hero">
+
+    <div class="container text-center position-relative" style="z-index: 2;">
+        <span class="badge-clientes">
+            <i class="fa-solid fa-handshake me-2"></i> Empresas que confían en nosotros
+        </span>
+
+        <h1>Nuestros Clientes</h1>
+
+        <p>
+            Más de 50 organizaciones en todo el país han confiado en ClimaLab
+            para potenciar su talento humano y transformar sus equipos de trabajo.
+        </p>
+
+        <div class="stat-empresas">
+            <div class="stat-item">
+                <h2>50+</h2>
+                <span>Empresas acompañadas</span>
+            </div>
+            <div class="stat-item">
+                <h2>200+</h2>
+                <span>Procesos realizados</span>
+            </div>
+            <div class="stat-item">
+                <h2>98%</h2>
+                <span>Clientes satisfechos</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== ONDAS ===== -->
+    <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 1440 320"
+             preserveAspectRatio="none">
+            <path fill="rgba(255,255,255,.15)"
+                  d="M0,96L80,112C160,128,320,160,480,170.7C640,181,800,171,960,154.7C1120,139,1280,117,1360,106.7L1440,96L1440,320L0,320Z"/>
+            <path fill="rgba(255,255,255,.30)"
+                  d="M0,160L80,149.3C160,139,320,117,480,101.3C640,85,800,75,960,90.7C1120,107,1280,149,1360,170.7L1440,192L1440,320L0,320Z"/>
+            <path fill="#f8fafc"
+                  d="M0,224L120,213.3C240,203,480,181,720,181.3C960,181,1200,203,1320,208L1440,213L1440,320L0,320Z"/>
+        </svg>
+    </div>
+
+</section>
+
+<!-- ===== CLIENTES ===== -->
+<section class="clientes-section">
+    <div class="container">
+
+        <div class="section-titulo mb-5">
+            <h2>Empresas que confían en nosotros</h2>
+            <p>Organizaciones de todo el país que eligieron a ClimaLab para potenciar su talento humano</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Cliente 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cliente-item">
+                    <div class="cliente-icono">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div class="servicio-barra"></div>
+                    <h3>Grupo TechSur</h3>
+                    <div class="cliente-ubicacion">
+                        <i class="fa-solid fa-location-dot"></i> Buenos Aires
+                    </div>
+                    <p>Empresa líder en tecnología con más de 600 empleados. Trabajamos en procesos de selección masiva y medición de clima organizacional.</p>
+                    <span class="cliente-tag">Selección · Clima</span>
+                </div>
+            </div>
+
+            <!-- Cliente 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cliente-item">
+                    <div class="cliente-icono">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <div class="servicio-barra"></div>
+                    <h3>Metalúrgica del Oeste</h3>
+                    <div class="cliente-ubicacion">
+                        <i class="fa-solid fa-location-dot"></i> Córdoba
+                    </div>
+                    <p>Grupo industrial con plantas en todo el país. Implementamos un programa de evaluación de desempeño y capacitación para mandos medios.</p>
+                    <span class="cliente-tag">Capacitación · Desempeño</span>
+                </div>
+            </div>
+
+            <!-- Cliente 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cliente-item">
+                    <div class="cliente-icono">
+                        <i class="fa-solid fa-hospital"></i>
+                    </div>
+                    <div class="servicio-barra"></div>
+                    <h3>Sanatorio del Centro</h3>
+                    <div class="cliente-ubicacion">
+                        <i class="fa-solid fa-location-dot"></i> Rosario
+                    </div>
+                    <p>Institución de salud con más de 400 profesionales. Desarrollamos un programa de bienestar laboral y gestionamos selección de perfiles especializados.</p>
+                    <span class="cliente-tag">Selección · Bienestar</span>
+                </div>
+            </div>
+
+            <!-- Cliente 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cliente-item">
+                    <div class="cliente-icono">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <div class="servicio-barra"></div>
+                    <h3>Retail Argentino</h3>
+                    <div class="cliente-ubicacion">
+                        <i class="fa-solid fa-location-dot"></i> Buenos Aires
+                    </div>
+                    <p>Cadena de comercios con presencia en todo el país. Brindamos consultoría en reestructuración de equipos y diseño de planes de carrera.</p>
+                    <span class="cliente-tag">Consultoría · Carrera</span>
+                </div>
+            </div>
+
+            <!-- Cliente 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cliente-item">
+                    <div class="cliente-icono">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div class="servicio-barra"></div>
+                    <h3>Logística Federal</h3>
+                    <div class="cliente-ubicacion">
+                        <i class="fa-solid fa-location-dot"></i> Mendoza
+                    </div>
+                    <p>Empresa de logística con más de 300 empleados. Implementamos un sistema de evaluación de desempeño y desarrollo de liderazgo.</p>
+                    <span class="cliente-tag">Desempeño · Liderazgo</span>
+                </div>
+            </div>
+
+            <!-- Cliente 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cliente-item">
+                    <div class="cliente-icono">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <div class="servicio-barra"></div>
+                    <h3>Seguros del Plata</h3>
+                    <div class="cliente-ubicacion">
+                        <i class="fa-solid fa-location-dot"></i> La Plata
+                    </div>
+                    <p>Compañía de seguros con más de 200 empleados. Trabajamos en la medición de clima organizacional y programas de bienestar.</p>
+                    <span class="cliente-tag">Clima · Bienestar</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== TESTIMONIOS ===== -->
+<section class="seccion-testimonios">
+    <div class="container">
+
+        <div class="titulo-testimonios mb-5">
+            <h2>Testimonios</h2>
+            <p>Lo que dicen nuestros clientes sobre nuestro trabajo</p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="testimonio-item">
+                    <div class="testimonio-comilla">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="testimonio-estrellas">★★★★★</div>
+                    <p>"Excelente servicio y atención. El equipo de ClimaLab demostró profesionalismo y compromiso en todo momento. Los resultados del proceso de selección superaron nuestras expectativas."</p>
+                    <div class="testimonio-autor">
+                        <strong>María González</strong>
+                        <span>Gerente de RRHH — Grupo TechSur</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="testimonio-item">
+                    <div class="testimonio-comilla">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="testimonio-estrellas">★★★★★</div>
+                    <p>"Muy profesionales y eficientes. La medición de clima organizacional que realizaron fue muy completa y los planes de mejora que propusieron generaron un cambio real en nuestra empresa."</p>
+                    <div class="testimonio-autor">
+                        <strong>Carlos Méndez</strong>
+                        <span>Director General — Metalúrgica del Oeste</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="testimonio-item">
+                    <div class="testimonio-comilla">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="testimonio-estrellas">★★★★★</div>
+                    <p>"ClimaLab nos ayudó a encontrar los perfiles que necesitábamos en tiempo récord. Su metodología de selección es rigurosa y los candidatos presentados encajaron perfecto con nuestra cultura."</p>
+                    <div class="testimonio-autor">
+                        <strong>Laura Ríos</strong>
+                        <span>Jefa de Personal — Sanatorio del Centro</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="testimonio-item">
+                    <div class="testimonio-comilla">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="testimonio-estrellas">★★★★★</div>
+                    <p>"El programa de capacitación que diseñaron para nuestros mandos medios fue transformador. Notamos una mejora significativa en el liderazgo y la comunicación interna de los equipos."</p>
+                    <div class="testimonio-autor">
+                        <strong>Martín Sosa</strong>
+                        <span>CEO — Retail Argentino</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-clientes">
+    <div class="container">
+        <div class="cta-box">
+            <h2>¿Querés ser parte de nuestros clientes?</h2>
+            <p>Sumá tu organización a la lista de empresas que confían en ClimaLab para potenciar su talento humano.</p>
+            <a href="contacto.html" class="btn">Solicitar Asesoramiento</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-modern">
+    <div class="container">
+        <div class="row gy-5">
+            <div class="col-lg-4">
+                <h3 class="footer-logo">Clima<span>Lab</span></h3>
+                <p>Consultora especializada en Recursos Humanos, selección de personal y desarrollo organizacional.</p>
+            </div>
+            <div class="col-lg-4">
+                <h5>Navegación</h5>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="empresas-clientes.html">Clientes</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h5>Contacto</h5>
+                <p>info@climalab.com</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">© 2026 ClimaLab · Todos los derechos reservados</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="climalab.js"></script>
+</body>
+</html>

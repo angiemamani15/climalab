@@ -1,0 +1,653 @@
+/* ==========================
+   CLIMALAB - ESTILO GENERAL
+========================== */
+
+:root{
+    --azul-claro:#0499DA;
+    --azul:#05579F;
+    --azul-oscuro:#08224C;
+    --verde:#289E2B;
+    --amarillo:#ECCF12;
+    --naranja:#E6A513;
+
+    --texto:#4b5563;
+    --blanco:#ffffff;
+    --gris:#f5f7fa;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:var(--texto);
+    background:#fff;
+    overflow-x:hidden;
+}
+
+/* ==========================
+   TITULOS
+========================== */
+
+h1,h2,h3,h4,h5{
+    color:var(--azul-oscuro);
+    font-weight:700;
+}
+
+h1{
+    margin-bottom:20px;
+    position:relative;
+}
+
+h1::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:4px;
+    background:linear-gradient(
+        90deg,
+        var(--azul-claro),
+        var(--verde)
+    );
+    margin:15px auto 0;
+    border-radius:50px;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.logo{
+    width:140px;
+    height:auto;
+    margin-top:-15px;
+    margin-bottom:-15px;
+}
+
+.navbar{
+    min-height:70px;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+.navbar-scroll{
+    background:white;
+    padding:15px 0;
+    margin-top:20px;
+    width:90%;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius:60px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.navbar-scroll .nav-link{
+    color:var(--azul-oscuro) !important;
+    font-weight:600;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.navbar-scroll .nav-link:hover{
+    color:var(--azul-claro) !important;
+}
+
+.menu-servicios{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:40px;
+
+    padding:60px 20px;
+    background:#f5f5f5;
+}
+
+.item-menu{
+    text-align:center;
+    width:120px;
+}
+
+.circulo{
+    width:80px;
+    height:80px;
+
+    margin:0 auto 15px;
+
+    background:#08224C;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border:4px solid #fff;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.circulo i{
+    color:white;
+    font-size:28px;
+}
+
+.item-menu p{
+    font-size:1rem;
+    color:#222;
+    font-weight:500;
+}
+
+.circulo:hover{
+    transform:translateY(-8px);
+    background:#289E2B;
+}
+
+/* ==========================
+   TARJETAS GENERALES
+========================== */
+
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    background:white;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.15);
+}
+
+.card-body{
+    padding:35px;
+}
+
+.card-body h3{
+    color:var(--azul);
+}
+
+.card-body p{
+    line-height:1.8;
+}
+
+/* ==========================
+   ICONOS
+========================== */
+
+.icono{
+    font-size:3rem;
+    color:var(--azul-claro);
+}
+
+.fa-quote-left{
+    color:var(--verde);
+}
+
+/* ==========================
+   SERVICIOS
+========================== */
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card::before{
+    content:"";
+    display:block;
+    height:5px;
+    width:100%;
+
+    background:
+    linear-gradient(
+        90deg,
+        var(--azul-claro),
+        var(--verde)
+    );
+}
+
+/* ==========================
+   TESTIMONIOS
+========================== */
+
+.bg-light{
+    background:#f8fafc !important;
+}
+
+strong{
+    color:var(--azul-oscuro);
+}
+
+/* ==========================
+   FAQ
+========================== */
+
+.accordion-button{
+    font-weight:600;
+    color:var(--azul-oscuro);
+}
+
+.accordion-button:not(.collapsed){
+    background:var(--azul);
+    color:white;
+}
+
+.accordion-button:focus{
+    box-shadow:none;
+}
+
+.accordion-body{
+    line-height:1.8;
+}
+
+/* ==========================
+   CLIENTES
+========================== */
+
+.cliente-logo{
+    max-width:150px;
+    margin:auto;
+    display:block;
+}
+
+.cliente-card{
+    text-align:center;
+}
+
+/* ==========================
+   SECCIONES INTERNAS
+========================== */
+
+section.py-5{
+    padding-top:100px !important;
+    padding-bottom:100px !important;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+    background:
+    linear-gradient(
+        135deg,
+        var(--azul-oscuro),
+        var(--azul)
+    );
+
+    color:white;
+    padding:30px 0;
+}
+
+.footer p{
+    margin:0;
+}
+
+/* ==========================
+   BOTONES
+========================== */
+
+.btn-climalab{
+    background:var(--verde);
+    color:white;
+    border:none;
+    border-radius:50px;
+    padding:12px 30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-climalab:hover{
+    background:var(--azul);
+    color:white;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    .hero-orbit{
+        width:100%;
+        height:auto;
+    }
+
+    .orbit-btn{
+        position:static;
+        margin:10px auto;
+    }
+
+    .hero-orbit::before{
+        display:none;
+    }
+
+    .logo-central{
+        position:relative;
+        transform:none;
+        margin:auto;
+    }
+
+    .navbar-scroll{
+        width:95%;
+    }
+}
+/* ==========================
+   TESTIMONIOS CLIMALAB
+========================== */
+
+:root{
+    --azul-claro:#0499DA;
+    --azul:#05579F;
+    --azul-oscuro:#08224C;
+    --verde:#289E2B;
+    --amarillo:#ECCF12;
+    --naranja:#E6A513;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f8fafc;
+    color:#555;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:white !important;
+}
+
+.navbar-brand{
+    font-size:1.8rem;
+    font-weight:700;
+    color:var(--azul-oscuro) !important;
+}
+
+/* TITULO */
+
+h1{
+    color:var(--azul-oscuro);
+    font-weight:700;
+    position:relative;
+    margin-bottom:60px;
+}
+
+h1::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:4px;
+    margin:15px auto;
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        var(--azul-claro),
+        var(--verde)
+    );
+}
+
+/* TARJETAS */
+
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s ease;
+    background:white;
+    height:100%;
+    position:relative;
+}
+
+.card::before{
+    content:"";
+    width:100%;
+    height:6px;
+    display:block;
+
+    background:linear-gradient(
+        90deg,
+        var(--azul-claro),
+        var(--verde)
+    );
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.15);
+}
+
+.card-body{
+    padding:35px;
+}
+
+/* EMPRESA */
+
+.card h3{
+    color:var(--azul);
+    font-size:1.4rem;
+    margin-bottom:20px;
+}
+
+/* ESTRELLAS */
+
+.card-body::after{
+    content:"★★★★★";
+    display:block;
+    color:var(--amarillo);
+    font-size:1.2rem;
+    margin-top:15px;
+}
+
+/* TESTIMONIO */
+
+.card p{
+    font-style:italic;
+    line-height:1.8;
+    color:#666;
+    min-height:120px;
+}
+
+/* NOMBRE */
+
+.card strong{
+    display:block;
+    margin-top:15px;
+    color:var(--azul-oscuro);
+    font-size:1.1rem;
+}
+
+/* CARGO */
+
+.card small{
+    color:#777;
+}
+
+/* SECCION */
+
+section{
+    padding-top:120px !important;
+    padding-bottom:100px !important;
+}
+
+/* FOOTER */
+
+.footer{
+    background:
+    linear-gradient(
+        135deg,
+        var(--azul-oscuro),
+        var(--azul)
+    );
+
+    color:white;
+    padding:25px 0;
+    margin-top:80px;
+}
+
+.footer .container{
+    font-weight:500;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .card{
+        margin-bottom:20px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+}
+.footer {
+    background: #08224C;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.footer-logo span {
+    color: #289E2B;
+}
+
+.footer-logo p {
+    line-height: 1.6;
+    color: #d8d8d8;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    margin-bottom: 15px;
+    color: #0499DA;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #289E2B;
+    padding-left: 5px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+    color: #d8d8d8;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 0.9rem;
+}
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    height:100vh;
+
+    background:
+    url("oficina.jpeg") center center/cover no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    rgba(40,158,43,.65);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    max-width:700px;
+    padding:20px;
+
+    color:white;
+}
+
+.hero-content h1{
+    color:white;
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-content h1::after{
+    display:none;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+    color:white;
+}
+
+/* menú de iconos sobre la imagen */
+
+.menu-servicios{
+    margin-top:-60px;
+    position:relative;
+    z-index:10;
+
+    background:white;
+
+    width:90%;
+    max-width:1200px;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.12);
+
+    padding:30px;
+}
