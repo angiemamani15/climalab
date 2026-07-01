@@ -1,370 +1,457 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Empresas Clientes | ClimaLab</title>
+  <title>Sobre Nosotros</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="clientes.css">
+  <link rel="stylesheet" href="sobrenos.css">
+  <link rel="javascript" href="climalab.js">
 </head>
 <body>
+  <!-- PANTALLA DE CARGA (PRELOADER) -->
+<div id="preloader">
+  <div class="loader-container">
+    <img src="logo.jpeg" alt="Logo de la consultora" class="logo-carga">
+    <div class="barra-carga">
+      <div class="progreso"></div>
+    </div>
+  </div>
+</div>
 
-<!-- ===== NAVBAR ===== -->
+<!-- RESTO DE TU PÁGINA (contenido normal) -->
+<header>
+  <!-- tu menú, etc -->
+</header>
+<main>
+  <!-- todo el contenido -->
+</main>
 <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
     <div class="container nav-box">
+
         <a class="navbar-brand" href="index.html">
             <img src="logo.jpeg" alt="ClimaLab" class="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="menu">
+
             <ul class="navbar-nav ms-auto align-items-lg-center">
+
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link active" href="index.html">Inicio</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="sobre-nosotros.html">Nosotros</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="servicios.html">Servicios</a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link active" href="empresas-clientes.html">Clientes</a>
+                    <a class="nav-link" href="empresas-clientes.html">Clientes</a>
     
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="herramientas.html">Herramientas</a>
                 </li>
+
                 <li class="nav-item ms-lg-3">
-                    <a href="contacto.html" class="btn btn-climalab">Contacto</a>
+                    <a href="contacto.html" class="btn btn-climalab">
+                        Contacto
+                    </a>
                 </li>
+
             </ul>
+
         </div>
+
     </div>
 </nav>
-
-<!-- ===== REDES SOCIALES ===== -->
 <div class="redes-sociales d-none d-lg-flex">
     <a href="#"><i class="fab fa-whatsapp"></i></a>
     <a href="#"><i class="fab fa-facebook-f"></i></a>
     <a href="#"><i class="fab fa-instagram"></i></a>
     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fas fa-envelope"></i></a>
 </div>
+<section class="nosotros-hero">
 
-<!-- ===== HERO ===== -->
-<section class="clientes-hero">
+    <div class="circulo circulo1"></div>
+    <div class="circulo circulo2"></div>
+    <div class="circulo circulo3"></div>
 
-    <div class="container text-center position-relative" style="z-index: 2;">
-        <span class="badge-clientes">
-            <i class="fa-solid fa-handshake me-2"></i> Empresas que confían en nosotros
-        </span>
+    <div class="container position-relative">
 
-        <h1>Nuestros Clientes</h1>
+        <div class="row justify-content-center text-center">
 
-        <p>
-            Empresas de Tucumán y del norte argentino confían en ClimaLab para fortalecer sus equipos, mejorar el clima laboral y desarrollar el talento humano mediante soluciones estratégicas en Recursos Humanos.
-        </p>
+            <div class="col-lg-8">
 
-        <div class="stat-empresas">
-            <div class="stat-item">
-                <h2>35+</h2>
-        <span>Empresas asesoradas</span>
+                <span class="badge-climalab">
+                    Consultora de Recursos Humanos
+                </span>
 
-                <h2>150+</h2>
-        <span>Procesos de selección</span>
+                <h1 class="titulo-principal mt-4">
+                    Potenciamos el talento y transformamos organizaciones
+                </h1>
 
-               <h2>97%</h2>
-        <span>Nivel de satisfacción</span>
+                <p class="descripcion-principal">
+                    Acompañamos a empresas en la gestión estratégica de personas,
+                    impulsando equipos más comprometidos, productivos y preparados
+                    para afrontar nuevos desafíos.
+                </p>
+
             </div>
+
         </div>
+
     </div>
 
-    <!-- ===== ONDAS ===== -->
     <div class="wave">
+
         <svg xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 1440 320"
              preserveAspectRatio="none">
-            <path fill="rgba(255,255,255,.15)"
-                  d="M0,96L80,112C160,128,320,160,480,170.7C640,181,800,171,960,154.7C1120,139,1280,117,1360,106.7L1440,96L1440,320L0,320Z"/>
-            <path fill="rgba(255,255,255,.30)"
-                  d="M0,160L80,149.3C160,139,320,117,480,101.3C640,85,800,75,960,90.7C1120,107,1280,149,1360,170.7L1440,192L1440,320L0,320Z"/>
-            <path fill="#f8fafc"
-                  d="M0,224L120,213.3C240,203,480,181,720,181.3C960,181,1200,203,1320,208L1440,213L1440,320L0,320Z"/>
+
+            <path fill="rgba(255,255,255,.18)"
+            d="M0,96L80,112C160,128,320,160,480,170.7C640,181,800,171,960,154.7C1120,139,1280,117,1360,106.7L1440,96L1440,320L0,320Z"/>
+
+            <path fill="rgba(255,255,255,.35)"
+            d="M0,160L80,149.3C160,139,320,117,480,101.3C640,85,800,75,960,90.7C1120,107,1280,149,1360,170.7L1440,192L1440,320L0,320Z"/>
+
+            <path fill="#fff"
+            d="M0,224L120,213.3C240,203,480,181,720,181.3C960,181,1200,203,1320,208L1440,213L1440,320L0,320Z"/>
+
         </svg>
+
     </div>
 
 </section>
 
-<!-- ===== CLIENTES ===== -->
-<section class="clientes-section">
-    <div class="container">
+<section class="estadisticas">
+  <div class="container">
 
-        <div class="section-titulo mb-5">
-            <h2>Empresas que confían en nosotros</h2>
-            <p>Organizaciones de todo el país que eligieron a ClimaLab para potenciar su talento humano</p>
+    <div class="row text-center">
+
+      <div class="col-md-4">
+        <div class="stat-card">
+          <h2>+100</h2>
+          <p>Procesos realizados</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-card">
+          <h2>+50</h2>
+          <p>Empresas acompañadas</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-card">
+          <h2>95%</h2>
+          <p>Clientes satisfechos</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="quienes-somos">
+  <div class="container">
+
+    <div class="section-title text-center">
+      <h2>Quiénes Somos</h2>
+      <p>
+        Somos una consultora especializada en Recursos Humanos orientada
+        a potenciar el desarrollo organizacional y la gestión del talento.
+      </p>
+    </div>
+
+    <div class="row align-items-center g-5 mt-3">
+
+      <div class="col-lg-6">
+
+        <div class="imagen-contenedor">
+
+          <img src="oficina.jpeg"
+            class="hero-img"
+            alt="ClimaLab">
+
+          <div class="tarjeta-flotante">
+
+            <i class="fa-solid fa-users"></i>
+
+            <div>
+              <strong>+50 Empresas</strong><br>
+              confían en nosotros
+            </div>
+
+          </div>
+
         </div>
 
-        <div class="row g-4">
+      </div>
 
-            <!-- Cliente 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cliente-item">
-                    <div class="cliente-icono">
-                        <i class="fa-solid fa-building"></i>
-                    </div>
-                    <div class="servicio-barra"></div>
-                   <h3>Citrusvil S.A.</h3>
+      <div class="col-lg-6">
 
-<div class="cliente-ubicacion">
-<i class="fa-solid fa-location-dot"></i> Tafí Viejo, Tucumán
-</div>
+        <h3 class="fw-bold mb-3" style="color: #08224C;">Comprometidos con tu crecimiento</h3>
 
-<p>
-Empresa agroindustrial líder en la producción y exportación de derivados del limón. ClimaLab acompañó procesos de selección de personal y programas para fortalecer el clima laboral.
-</p>
+        <p style="color: #6b7280; line-height: 1.8;">
+          En ClimaLab entendemos que las personas son el corazón de toda organización. 
+          Por eso, trabajamos codo a codo con nuestros clientes para diseñar soluciones 
+          a medida que potencian el talento y generan un impacto real en sus equipos.
+        </p>
 
-<span class="cliente-tag">
-Selección · Clima Laboral
-</span>
-                </div>
+        <ul class="list-unstyled mt-4">
+          <li class="mb-2">
+            <i class="fa-solid fa-check-circle me-2" style="color: #0499DA;"></i>
+            Estrategias personalizadas
+          </li>
+          <li class="mb-2">
+            <i class="fa-solid fa-check-circle me-2" style="color: #0499DA;"></i>
+            Equipo de expertos
+          </li>
+          <li class="mb-2">
+            <i class="fa-solid fa-check-circle me-2" style="color: #0499DA;"></i>
+            Resultados medibles
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="equipo-section">
+  <div class="container">
+
+    <div class="section-title text-center">
+      <h2>Nuestro Equipo</h2>
+      <p>Las personas que hacen posible cada proyecto.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="equipo-card">
+          <img src="https://via.placeholder.com/300" alt="">
+          <h5>Paula Sosa</h5>
+          <span>Director</span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="equipo-card">
+          <img src="https://via.placeholder.com/300" alt="">
+          <h5>Patricio Carrazan</h5>
+          <span>Gerente</span>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="equipo-card">
+          <img src="https://via.placeholder.com/300" alt="">
+          <h5>Rocio Costilla</h5>
+          <span>Analista de capacitación</span>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="equipo-card">
+          <img src="https://via.placeholder.com/300" alt="">
+          <h5>Belen Mena</h5>
+          <span>Analista de comunicación</span>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="equipo-card">
+          <img src="https://via.placeholder.com/300" alt="">
+          <h5>Sofia Lopez</h5>
+          <span>Administracion de personal</span>
+        </div>
+      </div>
+       <div class="col-lg-3 col-md-6">
+        <div class="equipo-card">
+          <img src="https://via.placeholder.com/300" alt="">
+          <h5>Facundo Bravo Morales</h5>
+          <span>Analista de clima y cultura organizacional</span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="equipo-card">
+          <img src="https://via.placeholder.com/300" alt="">
+          <h5>Fabricio Aguirre</h5>
+          <span>Analista de reclutamiento y selección</span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="equipo-card">
+          <img src="https://via.placeholder.com/300" alt="">
+          <h5>Milagros Vega</h5>
+          <span>Analista de desempeño</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="timeline py-5">
+
+    <div class="container position-relative">
+
+        <!-- Línea -->
+        <div class="linea"></div>
+
+        <!-- Misión -->
+        <div class="timeline-item">
+
+            <div class="circulo bg-azul">
+                <i class="fa-solid fa-bullseye"></i>
             </div>
 
-            <!-- Cliente 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cliente-item">
-                    <div class="cliente-icono">
-                        <i class="fa-solid fa-industry"></i>
-                    </div>
-                    <div class="servicio-barra"></div>
-                   <h3>Scania Argentina</h3>
+            <div class="card timeline-card borde-azul">
+                <div class="card-body p-5">
 
-<div class="cliente-ubicacion">
-<i class="fa-solid fa-location-dot"></i> Colombres, Tucumán
-</div>
-
-<p>
-Desarrollamos capacitaciones para equipos de trabajo y programas de liderazgo orientados a mejorar el desempeño organizacional.
-</p>
-
-<span class="cliente-tag">
-Capacitación · Liderazgo
-</span>
-                </div>
-            </div>
-
-            <!-- Cliente 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cliente-item">
-                    <div class="cliente-icono">
-                        <i class="fa-solid fa-hospital"></i>
-                    </div>
-                    <div class="servicio-barra"></div>
-                   <h3>José Minetti y Cía.</h3>
-
-<div class="cliente-ubicacion">
-<i class="fa-solid fa-location-dot"></i> Tucumán
-</div>
-
-<p>
-Implementamos estrategias para fortalecer el clima laboral, mejorar la comunicación interna y desarrollar el talento humano.
-</p>
-
-<span class="cliente-tag">
-Clima · Bienestar
-</span>
-                </div>
-            </div>
-
-            <!-- Cliente 4 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cliente-item">
-                    <div class="cliente-icono">
-                        <i class="fa-solid fa-store"></i>
-                    </div>
-                    <div class="servicio-barra"></div>
-                   <h3>Grupo Budeguer</h3>
-
-<div class="cliente-ubicacion">
-<i class="fa-solid fa-location-dot"></i> Tucumán
-</div>
-
-<p>
-Acompañamos procesos de capacitación y evaluación del desempeño para fortalecer el liderazgo y la gestión de equipos.
-</p>
-
-<span class="cliente-tag">
-Capacitación · Desempeño
-</span>
-                </div>
-            </div>
-
-            <!-- Cliente 5 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cliente-item">
-                    <div class="cliente-icono">
-                        <i class="fa-solid fa-truck-fast"></i>
-                    </div>
-                    <div class="servicio-barra"></div>
-                    <h3>Viluco S.A.</h3>
-
-                    <div class="cliente-ubicacion">
-                        <i class="fa-solid fa-location-dot"></i> Tucumán
-                    </div>
+                    <h2 class="titulo-azul">Misión</h2>
 
                     <p>
-                     Empresa de transporte y logística donde brindamos asesoramiento en selección de personal y desarrollo organizacional.
+                        Impulsar organizaciones más humanas y eficientes, acompañando a las empresas en la mejora de su clima laboral y el fortalecimiento de su cultura organizacional. A través de un enfoque estratégico y centrado en las personas, se buscará favorecer el compromiso, la comunicación interna, el trabajo en equipo y el desarrollo profesional, promoviendo ambientes laborales positivos, participativos y alineados con los objetivos de cada organización. 
                     </p>
 
-                    <span class="cliente-tag">
-                      Selección · Talento
-                    </span>
-                    </div>
-            </div>
-
-            <!-- Cliente 6 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cliente-item">
-                    <div class="cliente-icono">
-                        <i class="fa-solid fa-hand-holding-dollar"></i>
-                    </div>
-                    <div class="servicio-barra"></div>
-                    <h3>Trapani S.A.</h3>
-
-<div class="cliente-ubicacion">
-<i class="fa-solid fa-location-dot"></i> San Miguel de Tucumán
-</div>
-
-<p>
-Empresa comercial referente del NOA. Trabajamos en programas de capacitación y acciones para fortalecer la cultura organizacional.
-</p>
-
-<span class="cliente-tag">
-Capacitación · Cultura
-</span>
                 </div>
             </div>
 
         </div>
+
+        <!-- Visión -->
+        <div class="timeline-item">
+
+            <div class="circulo bg-azul-oscuro">
+                <i class="fa-solid fa-eye"></i>
+            </div>
+
+            <div class="card timeline-card borde-azul-oscuro">
+                <div class="card-body p-5">
+
+                    <h2 class="titulo-azul-oscuro">Visión</h2>
+
+                    <p>
+                        Ser una consultora referente en clima y cultura organizacional, generando cambios positivos y sostenibles en las organizaciones, siendo nuestro trabajo una herramienta clave para que nuestros clientes logren destacarse dentro del mercado laboral. Se buscará fortalecer culturas organizacionales sólidas, promoviendo el compromiso, el liderazgo y el desarrollo de equipos de trabajo preparados para los desafíos actuales. 
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Valores -->
+        <div class="timeline-item">
+
+            <div class="circulo bg-azul-muy-oscuro">
+                <i class="fa-solid fa-gem"></i>
+            </div>
+
+            <div class="card timeline-card borde-azul-muy-oscuro">
+                <div class="card-body p-5">
+
+                    <h2 class="titulo-azul-muy-oscuro">Valores</h2>
+
+                    <p>
+                       Escucha activa, respeto, confidencialidad, empatía, trabajo en equipo, compromiso, responsabilidad, innovación, mejora y aprendizaje continuo. Se buscará mantener un ambiente laboral basado en la confianza, la buena comunicación y el crecimiento constante de las personas y las organizaciones. 
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
     </div>
+
 </section>
 
-<!-- ===== TESTIMONIOS ===== -->
-<section class="seccion-testimonios">
-    <div class="container">
 
-        <div class="titulo-testimonios mb-5">
-            <h2>Testimonios</h2>
-            <p>Lo que dicen nuestros clientes sobre nuestro trabajo</p>
-        </div>
 
-        <div class="row g-4">
+<section class="cta-section">
+  <div class="container">
 
-            <div class="col-md-6">
-                <div class="testimonio-item">
-                    <div class="testimonio-comilla">
-                        <i class="fa-solid fa-quote-left"></i>
-                    </div>
-                    <div class="testimonio-estrellas">★★★★★</div>
-                    <p>"El acompañamiento de ClimaLab fue excelente. El proceso de selección fue ágil y encontramos profesionales que se adaptaron rápidamente a nuestra organización."</p>
-                    <div class="testimonio-autor">
-                        <strong>María Lopez</strong>
-                        <span>Gerente de Recursos Humanos — Citrusvil S.A.</span>
-                    </div>
-                </div>
-            </div>
+    <div class="cta-box">
+      <h2>¿Buscás fortalecer tu equipo?</h2>
 
-            <div class="col-md-6">
-                <div class="testimonio-item">
-                    <div class="testimonio-comilla">
-                        <i class="fa-solid fa-quote-left"></i>
-                    </div>
-                    <div class="testimonio-estrellas">★★★★★</div>
-                    <p>"Las capacitaciones brindadas por ClimaLab fortalecieron el liderazgo de nuestros supervisores y mejoraron el trabajo en equipo."</p>
-                    <div class="testimonio-autor">
-                        <strong>Carlos Méndez</strong>
-                        <span>Jefe de Planta — Scania Argentina</span>
-                    </div>
-                </div>
-            </div>
+      <p>
+        Estamos listos para acompañar el crecimiento de tu organización.
+      </p>
 
-            <div class="col-md-6">
-                <div class="testimonio-item">
-                    <div class="testimonio-comilla">
-                        <i class="fa-solid fa-quote-left"></i>
-                    </div>
-                    <div class="testimonio-estrellas">★★★★★</div>
-                    <p>"La evaluación del clima laboral nos permitió identificar oportunidades de mejora y aumentar el compromiso de nuestros colaboradores."</p>
-                    <div class="testimonio-autor">
-                        <strong>Laura Ríos</strong>
-                        <span>Responsable de RRHH — José Minetti y Cía.</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="testimonio-item">
-                    <div class="testimonio-comilla">
-                        <i class="fa-solid fa-quote-left"></i>
-                    </div>
-                    <div class="testimonio-estrellas">★★★★★</div>
-                    <p>"Destacamos el profesionalismo y la cercanía del equipo de ClimaLab. Su asesoramiento fue clave para optimizar nuestros procesos de gestión del talento."</p>
-                    <div class="testimonio-autor">
-                        <strong>Martín Sosa</strong>
-                        <span>Gerente General — Grupo Budeguer</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+      <a href="contacto.html" class="btn btn-light">
+        Contactanos
+      </a>
     </div>
-</section>
 
-<!-- ===== CTA ===== -->
-<section class="cta-clientes">
+  </div>
+</section>
+<footer class="footer-modern" style="padding: 20px 0 12px;">
     <div class="container">
-        <div class="cta-box">
-            <h2>¿Querés potenciar el talento de tu organización?</h2>
-            <p>Sumate a las empresas que confían en ClimaLab para fortalecer sus equipos, mejorar el clima laboral y desarrollar estrategias de Recursos Humanos que impulsen el crecimiento de sus organizaciones.</p>
-            <a href="contacto.html" class="btn">Solicitar Asesoría</a>
+        <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-md-4">
+                <h3 class="footer-logo" style="font-size: 1.2rem; margin-bottom: 0;">
+                    Clima<span>Lab</span>
+                </h3>
+            </div>
+            <!-- Frase -->
+            <div class="col-md-5">
+                <p style="margin-bottom: 0; font-size: 0.8rem; color: #cbd5e1;">
+                    Potenciamos el talento y transformamos organizaciones.
+                </p>
+            </div>
+            <!-- Redes Sociales -->
+            <div class="col-md-3 text-md-end">
+                <a href="#" aria-label="WhatsApp" style="color: #cbd5e1; margin: 0 6px; font-size: 1.1rem;"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" aria-label="Facebook" style="color: #cbd5e1; margin: 0 6px; font-size: 1.1rem;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram" style="color: #cbd5e1; margin: 0 6px; font-size: 1.1rem;"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn" style="color: #cbd5e1; margin: 0 6px; font-size: 1.1rem;"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Correo electrónico" style="color: #cbd5e1; margin: 0 6px; font-size: 1.1rem;"><i class="fab fa-google"></i></a>
+            </div>
         </div>
-    </div>
-</section>
 
-<!-- ===== FOOTER ===== -->
-<footer class="footer-modern">
-    <div class="container">
-        <div class="row gy-5">
-            <div class="col-lg-4">
-                <h3 class="footer-logo">Clima<span>Lab</span></h3>
-                <p>Consultora especializada en Recursos Humanos, selección de personal y desarrollo organizacional.</p>
-            </div>
-            <div class="col-lg-4">
-                <h5>Navegación</h5>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="sobre-nosotros.html">Nosotros</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="empresas-clientes.html">Clientes</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-4">
-                <h5>Contacto</h5>
-                <p>info@climalab.com</p>
-                <div class="socials">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <!-- MAPA - Nueva fila -->
+        <div class="row" style="margin-top: 15px;">
+            <div class="col-12">
+                <div style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56989.473106975625!2d-65.51858721518484!3d-27.168103353917027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225b3b2b09adb1%3A0x7c0ef385a5f3e12e!2sMonteros%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1740000000000" 
+                        width="100%" 
+                        height="200" 
+                        style="border:0; display:block;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="footer-bottom">© 2026 ClimaLab · Todos los derechos reservados</div>
+
+        <hr style="margin: 12px 0 8px;">
+        <div class="footer-bottom" style="font-size: 0.75rem; margin-top: 0;">
+            © 2026 ClimaLab · Todos los derechos reservados
+        </div>
     </div>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 <script src="climalab.js"></script>
 </body>
 </html>

@@ -1,4 +1,89 @@
 /* ===== LOGO ===== */
+/* Preloader - fondo oscuro profesional */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff; /* Azul marino de tu consultora */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Siempre por encima de todo */
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+/* Contenedor del logo y barra */
+.loader-container {
+  text-align: center;
+  animation: fadeInUp 0.8s ease;
+}
+
+.logo-carga {
+  width: 180px; /* Ajusta según tu logo */
+  height: auto;
+  display: block;
+  margin: 0 auto 30px auto;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Barra de carga elegante */
+.barra-carga {
+  width: 240px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.progreso {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #64ffda, #48b5e4);
+  border-radius: 4px;
+  animation: cargar 2.5s ease-in-out forwards;
+}
+
+/* Cuando la página ya cargó, ocultamos el preloader */
+#preloader.oculto {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* ANIMACIONES */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+@keyframes cargar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .logo {
     height: 60px;
     width: auto;
@@ -100,15 +185,22 @@
 }
 
 /* ===== HERO / NOSOTROS ===== */
+.hero {
+    height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .nosotros-hero {
-    min-height: 110vh; /* Ocupa el 90% de la altura de la pantalla */
-    padding: 100px 0 80px;
     position: relative;
     overflow: hidden;
-    padding: 140px 0 90px;
+    padding: 250px 0 180px;  /* Más padding superior e inferior */
+    min-height: 90vh;        /* 90% de la altura de la pantalla */
     background: linear-gradient(135deg, #08224C 0%, #05579F 50%, #0499DA 100%);
     color: #fff;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .titulo-principal {
@@ -122,9 +214,6 @@
     color: rgba(255,255,255,.92);
     margin-top: 25px;
     line-height: 1.8;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .badge-climalab {
@@ -137,22 +226,42 @@
     border: 1px solid rgba(255,255,255,.2);
 }
 
-.btn-climalab-hero {
-    background: white;
-    color: #08224C;
-    border-radius: 50px;
-    padding: 14px 35px;
-    font-weight: 600;
-    transition: .3s;
-    border: none;
-    text-decoration: none;
+.hero-img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 30px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.30);
+}
+
+.imagen-contenedor {
+    position: relative;
     display: inline-block;
 }
 
-.btn-climalab-hero:hover {
+.tarjeta-flotante {
+    position: absolute;
+    bottom: -20px;
+    left: -30px;
+    background: #fff;
+    color: #08224C;
+    border-radius: 20px;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.18);
+}
+
+.tarjeta-flotante i {
+    width: 55px;
+    height: 55px;
     background: #0499DA;
-    color: white;
-    transform: scale(1.05);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
 }
 
 /* ===== CÍRCULOS DECORATIVOS ===== */
@@ -200,7 +309,15 @@
 /* ===== ESTADÍSTICAS ===== */
 .estadisticas {
     padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
     background: #f8fafc;
+}
+
+.estadisticas .container {
+    background: transparent;
 }
 
 .stat-card {
@@ -265,46 +382,7 @@
 
 /* ===== QUIENES SOMOS ===== */
 .quienes-somos {
-    padding: 80px 0;
-}
-
-.quienes-somos .imagen-contenedor {
-    position: relative;
-    display: inline-block;
-    margin-top: 30px;
-}
-
-.quienes-somos .hero-img {
-    width: 100%;
-    max-width: 520px;
-    border-radius: 30px;
-    box-shadow: 0 25px 60px rgba(0,0,0,.30);
-}
-
-.quienes-somos .tarjeta-flotante {
-    position: absolute;
-    bottom: -20px;
-    left: -30px;
-    background: #fff;
-    color: #08224C;
-    border-radius: 20px;
-    padding: 18px 22px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    box-shadow: 0 20px 40px rgba(0,0,0,.18);
-}
-
-.quienes-somos .tarjeta-flotante i {
-    width: 55px;
-    height: 55px;
-    background: #0499DA;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 22px;
+    padding: 40px 0 80px;
 }
 
 /* ===== EQUIPO ===== */
@@ -575,6 +653,9 @@
 
 /* ===== RESPONSIVE ===== */
 @media(max-width: 991px) {
+    .hero-img {
+        height: 400px;
+    }
     .nosotros-hero {
         padding: 120px 0 70px;
         text-align: center;
@@ -588,40 +669,17 @@
     .cta-box h2 {
         font-size: 2rem;
     }
-    .quienes-somos .tarjeta-flotante {
-        bottom: -10px;
-        left: 10px;
-        padding: 12px 16px;
-        font-size: 14px;
-    }
-    .quienes-somos .tarjeta-flotante i {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-    }
 }
 
 @media(max-width: 576px) {
+    .hero-img {
+        height: 280px;
+    }
     .stat-card h2 {
         font-size: 2.3rem;
     }
     .equipo-card img {
         width: 150px;
         height: 150px;
-    }
-    .quienes-somos .hero-img {
-        max-width: 100%;
-    }
-    .quienes-somos .tarjeta-flotante {
-        bottom: -5px;
-        left: 5px;
-        padding: 10px 14px;
-        font-size: 12px;
-        gap: 10px;
-    }
-    .quienes-somos .tarjeta-flotante i {
-        width: 35px;
-        height: 35px;
-        font-size: 14px;
     }
 }
