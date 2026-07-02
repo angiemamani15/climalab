@@ -421,7 +421,112 @@ h1::after { content: ""; display: block; width: 90px; height: 4px; background: l
     padding: 80px 0 !important;
     overflow-x: auto;
 }
+/* --- Carrusel Animado Infinito --- */
+.carrusel-infinito-container {
+    overflow: hidden; /* Oculta los elementos que quedan fuera de la pantalla */
+    width: 100%;
+    padding: 30px 0;
+    background-color: #ffffff; /* Ajustalo al color de fondo que desees */
+    position: relative;
+}
 
+/* Difuminado sutil en los bordes izquierdo y derecho (opcional, estilo premium) */
+.carrusel-infinito-container::before,
+.carrusel-infinito-container::after {
+    content: "";
+    height: 100%;
+    width: 150px;
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+}
+.carrusel-infinito-container::before {
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+.carrusel-infinito-container::after {
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+/* Fila contenedora que se desplaza */
+.carrusel-infinito-track {
+    display: flex;
+    width: max-content;
+    animation: scrollInfinito 35s linear infinite; /* Controla la velocidad cambiando los '35s' */
+}
+
+/* Al pasar el mouse por encima, la animación se pausa para poder leer cómodamente */
+.carrusel-infinito-track:hover {
+    animation-play-state: paused;
+}
+
+/* Grupos emparejados alineados uno al lado del otro */
+.carrusel-grupo {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding-right: 30px; /* Margen de separación entre bloques */
+}
+
+/* Estilo individual de cada tarjeta dentro del carrusel */
+.timeline-h-item {
+    flex-shrink: 0;
+    width: 320px; /* Ancho fijo para cada tarjeta de beneficio */
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.timeline-h-item:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-h-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(40, 158, 43, 0.1);
+    color: #289e2b; /* Color verde ClimaLab */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.timeline-h-content h3 {
+    font-size: 1.15rem;
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.timeline-h-content p {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+/* KEYFRAMES: Mueve el track exactamente el 50% (el ancho de un grupo entero) */
+@keyframes scrollInfinito {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 /* Contenedor de la línea de tiempo horizontal */
 .timeline-horizontal {
     display: flex;
