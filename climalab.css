@@ -324,7 +324,7 @@ h2 {
   width: 450px;
   height: 450px;
   border-radius: 50%;
-  background: rgba(4, 153, 218, 0.15);
+  background: rgba(40, 158, 43, 0.25);
   filter: blur(90px);
   top: 10%;
   left: 15%;
@@ -347,7 +347,7 @@ h2 {
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(8, 34, 76, 0.8), rgba(40, 158, 43, 0.7));
+  background: linear-gradient(135deg, rgba(8, 76, 8, 0.8), rgba(40, 158, 43, 0.7));
   z-index: 1;
 }
 
@@ -914,7 +914,7 @@ h2 {
 
 /* ===== CTA FINAL ===== */
 .cta-final {
-  background: linear-gradient(135deg, var(--azul-oscuro), var(--verde-oscuro));
+  background: var(--verde-oscuro);
   position: relative;
   overflow: hidden;
 }
