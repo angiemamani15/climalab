@@ -307,17 +307,15 @@ h2 {
 }
 
 /* ===== HERO ===== */
-.hero {
-  min-height: 100vh;
-  background: url("oficina.jpeg") center center/cover no-repeat;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
+.hero{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-
 .hero::before {
   content: "";
   position: absolute;
@@ -330,7 +328,28 @@ h2 {
   left: 15%;
   z-index: 1;
 }
+.hero-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
 
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    z-index:1;
+}
+
+.hero-content,
+.hero-scroll{
+    position:relative;
+    z-index:2;
+}
 .hero::after {
   content: "";
   position: absolute;
