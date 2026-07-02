@@ -307,13 +307,17 @@
 .cliente-item {
     background: #fff;
     border-radius: 24px;
-    padding: 35px;
+    padding: 28px;
     height: 100%;
     position: relative;
     overflow: hidden;
     transition: .4s ease;
     border: 1px solid rgba(0,194,203,.1);
     box-shadow: 0 15px 40px rgba(0,0,0,.06);
+}
+.cliente-item:hover .cliente-logo{
+    transform: scale(1.08);
+    transition:.35s;
 }
 
 .cliente-item::before {
@@ -372,6 +376,28 @@
     color: #6b7280;
     line-height: 1.8;
     margin-bottom: 0;
+}
+/* ===== LOGOS DE EMPRESAS ===== */
+
+.cliente-logo-container{
+    height: 80px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.cliente-logo{
+    max-width: 100px;          /* Tamaño máximo horizontal */
+    max-height: 50px;          /* Tamaño máximo vertical */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: .3s ease;
+}
+
+.cliente-item:hover .cliente-logo{
+    transform: scale(1.05);
 }
 
 .servicio-barra {
